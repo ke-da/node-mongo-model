@@ -1,0 +1,20 @@
+{
+  "name": "mongo-model",
+  "version": "0.1.0",
+  "dependencies": {
+    "mongodb": "^1.4.7",
+    "bluebird": "^2.2.2"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/coffee -cwbo lib src",
+    "test": "./node_modules/.bin/jasmine-node --color --autotest --watch ./lib/ --test-dir ./lib/spec/"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "jasmine-node": "^1.14.5"
+  },
+  "engines": {
+    "node": "~0.10",
+    "npm": "~1.2"
+  }
+}
